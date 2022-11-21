@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Created by: Emmanuel
+# Created by: Emmanuel Fofeyin
 # Created on: Oct 2022
 # This program is a number guessing game
 # Using break statements.
@@ -12,7 +12,7 @@ def main():
 
     # input and variables
     random_number = random.randint(0, 9)
-    guessed_number_as_string = input("Guess the number from 0 to 9: ")
+    guessed_number_as_string = input("Enter a number between 0 and 9: ")
 
     # process and output
     print("")
