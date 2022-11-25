@@ -14,7 +14,6 @@ def main():
     random_number = random.randint(0, 9)
 
     # process and output
-    print("")
     try:
         while True:
             guessed_number_as_string = input("Enter a number between 0 and 9: ")
@@ -22,16 +21,15 @@ def main():
             if guessed_number_as_number == random_number:
                 print("\nYou guessed correctly!")
                 break
-            else:
-                print(
-                    "You guessed incorrectly, the number was {}.".format(random_number)
-                )
-                
+            elif guessed_number_as_number > random_number:
+                print("\n{} is higher than the random number.".format(guessed_number_as_string))
+            elif guessed_number_as_number < random_number:
+                print("\n{} is lower than the random number.".format(guessed_number_as_string))
     except ValueError:
         print("\nNot good, {} is not an integer.".format(guessed_number_as_string))
     finally:
         print("\nThanks for playing.")
-        print("\nDone.")
+    print("\nDone.")
 
 
 if __name__ == "__main__":
